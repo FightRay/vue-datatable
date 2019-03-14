@@ -119,6 +119,7 @@ class Handler {
 	 * @returns {Promise<TRow[]>} The sorted rows.
 	 */
 	defaultSortHandler( filteredData, sortColumn, sortDir ){
+		console.log("sort test");
 		if ( !sortColumn || sortDir === null ){
 			return filteredData;
 		}
